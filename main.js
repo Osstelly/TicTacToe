@@ -57,11 +57,11 @@ class Game {
       this.board[+id] = huPlayer
       this.cellList[+id].innerHTML = `<span>${huPlayer}</span>`
       if (this.turnCount >= this.limit) { 
-        result.innerHTML = '<h4>Draw!</h4>'
+        result.innerHTML = '<h4>Ничья!!</h4>'
         return
       }
       if (this.checkWinner(this.board, huPlayer)) {
-        result.innerHTML = '<h4>You win!</h4>'
+        result.innerHTML = '<h4>Победа!</h4>'
         return
       }
       this.makeAiTurn()
